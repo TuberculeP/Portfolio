@@ -1,0 +1,9 @@
+section.cookie{
+    padding: 20px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.532);
+    width: fit-content;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
