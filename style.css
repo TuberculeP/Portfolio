@@ -70,6 +70,7 @@ main .reseaux {
 }
 main .reseaux > * {
   transition: 0.2s;
+  padding: 0 15px;
 }
 main .reseaux #discord:hover,
 main .reseaux #github:hover,
