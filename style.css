@@ -34,6 +34,10 @@ h1 {
   width: fit-content;
   margin: 20px auto;
 }
+h1 span.hashtag {
+  font-family: inherit;
+  color: #868686;
+}
 
 h2 {
   font-size: 32px;
@@ -63,6 +67,14 @@ main .border {
 main .reseaux {
   width: fit-content;
   margin: 0 auto;
+}
+main .reseaux > * {
+  transition: 0.2s;
+}
+main .reseaux #discord:hover,
+main .reseaux #github:hover,
+main .reseaux #mail:hover {
+  filter: drop-shadow(0 0 5px rgba(141, 200, 255, 0.6823529412));
 }
 main section {
   max-width: 320px;
