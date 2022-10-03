@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Fira+Code&display=swap");
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "Fira Code", monospace;
+	color: #f0eeee;
+}
+
+body {
+	background: linear-gradient(180deg, #261726 0%, #262a2e 76.04%);
+	min-height: 100vh;
+}
+
+header {
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 30px;
+}
+
+h1,
+h2,
+h3 {
+	font-family: "Barlow Condensed", sans-serif;
+	font-stretch: condensed;
+}
+
+h1 {
+	font-size: 40px;
+	border: 2px solid #f0eeee;
+	border-style: solid hidden;
+	padding: 5px;
+	width: fit-content;
+	margin: 20px auto;
+}
+h2 {
+	font-size: 32px;
+	color: #ff90fb;
+}
+p {
+	font-size: 17px;
+}
+
+main {
+	#img_profile {
+		width: 210px;
+		height: 210px;
+		border-radius: 100%;
+		background: url("media/profile.jpg");
+		background-position: top 15% left 47%;
+		background-size: 260%;
+	}
+	.border {
+		width: fit-content;
+		padding: 7px;
+		border: 3px solid #ff90fb;
+		box-shadow: 0 0 5px #ff90fbae;
+		border-radius: 100%;
+		margin: 20px auto;
+	}
+
+	.reseaux {
+		width: fit-content;
+		margin: 0 auto;
+	}
+
+	section {
+		max-width: 320px;
+		margin: 0 auto;
+		margin-top: 50px;
+
+		p {
+			border: 2px solid #ff90fb;
+			border-style: hidden solid hidden hidden;
+			padding-right: 10px;
+		}
+	}
+
+	div.cta {
+		width: fit-content;
+		margin: 50px auto;
+		button {
+			background: none;
+			border: 2px solid #8dc8ff;
+			color: #8dc8ff;
+			border-radius: 0;
+			font-size: 16px;
+			padding: 15px;
+			box-shadow: 0 0 5px #8dc8ffae;
+		}
+	}
+}
