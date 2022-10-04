@@ -1,3 +1,6 @@
+var path = window.location.pathname;
+var page = path.split("/").pop();
+
 //discord animation
 let discordClicked = false;
 document.querySelector("#discord").addEventListener("click", () => {
@@ -15,3 +18,14 @@ document.querySelector("#discord").addEventListener("click", () => {
 	}, 200);
 	console.log("Discord Clicked");
 });
+
+//reseaux animation
+
+setTimeout(() => {
+	document.querySelectorAll(".hidden").forEach((object, index) => {
+		setTimeout(() => {
+			object.classList.remove("hidden");
+			object.style.transition = "0.5s";
+		}, 200 * index);
+	});
+}, 500);

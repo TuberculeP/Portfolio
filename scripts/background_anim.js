@@ -72,7 +72,7 @@ class Particle {
 		}
 	}
 	update() {
-		fill(255,144,251);
+		fill(255, 144, 251);
 		ellipse(this.loc.x, this.loc.y, this.loc.z);
 	}
 }

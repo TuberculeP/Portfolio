@@ -71,13 +71,16 @@ main .reseaux {
   margin: 0 auto;
 }
 main .reseaux > * {
-  transition: 0.2s;
   padding: 0 15px;
 }
 main .reseaux #discord:hover,
 main .reseaux #github:hover,
 main .reseaux #mail:hover {
   filter: drop-shadow(0 0 5px rgba(141, 200, 255, 0.6823529412));
+}
+main .reseaux .hidden {
+  transform: translateY(50px);
+  opacity: 0;
 }
 main section {
   max-width: 320px;
@@ -107,7 +110,7 @@ main canvas {
   top: 0;
   z-index: -10;
   mix-blend-mode: screen;
-  opacity: 0%;
+  opacity: 20%;
 }
 
 /*# sourceMappingURL=style.css.map */
