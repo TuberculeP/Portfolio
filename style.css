@@ -7,6 +7,8 @@
 }
 
 body {
+  margin: 0;
+  overflow: hidden;
   background: linear-gradient(180deg, #261726 0%, #262a2e 76.04%);
   min-height: 100vh;
 }
@@ -99,6 +101,13 @@ main div.cta button {
   font-size: 16px;
   padding: 15px;
   box-shadow: 0 0 5px rgba(141, 200, 255, 0.6823529412);
+}
+main canvas {
+  position: absolute;
+  top: 0;
+  z-index: -10;
+  mix-blend-mode: screen;
+  opacity: 0%;
 }
 
 /*# sourceMappingURL=style.css.map */
