@@ -1,4 +1,4 @@
-var num = 2000;
+var num = 300;
 var noiseScale = 500,
 	noiseStrength = 1;
 var particles = [num];

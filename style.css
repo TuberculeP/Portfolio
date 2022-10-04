@@ -110,7 +110,7 @@ main canvas {
   top: 0;
   z-index: -10;
   mix-blend-mode: screen;
-  opacity: 20%;
+  opacity: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */
