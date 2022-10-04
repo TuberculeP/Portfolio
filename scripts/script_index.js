@@ -29,3 +29,23 @@ setTimeout(() => {
 		}, 200 * index);
 	});
 }, 500);
+
+//burger
+
+let burgerButton = document.querySelector("#burger");
+let header = document.querySelector("header");
+let main = document.querySelector("main");
+let burgerToggle = false;
+
+burgerButton.addEventListener("click", () => {
+	main.style.transition = "0.5s ease-in-out";
+	if (burgerToggle) {
+		main.style.transform = "translateX(0)";
+	} else {
+		main.style.transform = "translateX(-100vw)";
+	}
+	burgerToggle = !burgerToggle;
+	setTimeout(() => {
+		main.style.transition = "0";
+	}, 500);
+});

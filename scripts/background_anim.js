@@ -4,7 +4,8 @@ var noiseScale = 500,
 var particles = [num];
 
 function setup() {
-	createCanvas(windowWidth, windowHeight);
+	var canvas = createCanvas(windowWidth, windowHeight);
+	canvas.parent("p5-anim");
 	noStroke();
 	for (let i = 0; i < num; i++) {
 		//x value start slightly outside the right of canvas, z value how close to viewer
