@@ -33,19 +33,28 @@ setTimeout(() => {
 //burger
 
 let burgerButton = document.querySelector("#burger");
-let header = document.querySelector("header");
+let aside = document.querySelector("aside");
 let main = document.querySelector("main");
 let burgerToggle = false;
 
 burgerButton.addEventListener("click", () => {
-	main.style.transition = "0.5s ease-in-out";
-	if (burgerToggle) {
-		main.style.transform = "translateX(0)";
+	//ajouter le temps de transition
+	aside.style.transition = "0.5s";
+	main.style.transition = "0.5s";
+
+	//condition
+	if (!burgerToggle) {
+		aside.style.transform = "translateX(0)";
+		main.style.transform = "translateX(-100%)";
 	} else {
-		main.style.transform = "translateX(-100vw)";
+		aside.style.transform = "translateX(100%)";
+		main.style.transform = "translateX(0)";
 	}
 	burgerToggle = !burgerToggle;
+
+	//supprimer le temps de transition
 	setTimeout(() => {
+		aside.style.transition = "0";
 		main.style.transition = "0";
 	}, 500);
 });
