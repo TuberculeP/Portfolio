@@ -2,7 +2,7 @@ let path = window.location.pathname;
 tempPath = path.split("/");
 let page = tempPath.pop();
 let pageDir = tempPath.pop();
-if(page ==="") page = pageDir;
+if(page ==="") page = "index.html";
 console.log("Path : "+path+" | Dir : "+pageDir+" | Page : "+page);
 
 //burger
@@ -35,7 +35,7 @@ burgerButton.addEventListener("click", () => {
 });
 
 //animations de l'accueil
-if(path==="/"){
+if(page==="index.html" && (pageDir ==="/" || pageDir ==="/Portfolio/")){
 	//discord animation
 	let discordClicked = false;
 	document.querySelector("#discord").addEventListener("click", () => {
@@ -67,7 +67,7 @@ if(path==="/"){
 
 //bouton projet
 
-if(path==="/projets" && (page==="projets" || page==="index.html")){
+if(page==="index.html" && pageDir ==="projets"){
 	let randomDuPif = document.querySelector("button");
 	let listeProjets = document.querySelectorAll("ul a");
 	randomDuPif.addEventListener('click', ()=>{
