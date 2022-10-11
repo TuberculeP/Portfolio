@@ -154,6 +154,7 @@ main div.cta {
   margin: 40px auto 0;
 }
 main div.cta button, main div.cta a.button {
+  text-decoration: none;
   background: none;
   border: 2px solid #8dc8ff;
   color: #8dc8ff;
