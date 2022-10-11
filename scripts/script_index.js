@@ -1,6 +1,9 @@
 let path = window.location.pathname;
-let page = path.split("/").pop();
-console.log("Path : "+path+" | Page : "+page);
+tempPath = path.split("/");
+let page = tempPath.pop();
+let pageDir = tempPath.pop();
+if(page ==="") page = pageDir;
+console.log("Path : "+path+" | Dir : "+pageDir+" | Page : "+page);
 
 //burger
 
