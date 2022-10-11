@@ -35,7 +35,7 @@ burgerButton.addEventListener("click", () => {
 });
 
 //animations de l'accueil
-if(page==="index.html" && (path ==="/" || pageDir ==="/Portfolio/")){
+if(page==="index.html" && (path ==="/" || path ==="/Portfolio/")){
 	//discord animation
 	let discordClicked = false;
 	document.querySelector("#discord").addEventListener("click", () => {
