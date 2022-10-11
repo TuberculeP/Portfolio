@@ -1,34 +1,6 @@
-var path = window.location.pathname;
-var page = path.split("/").pop();
-
-//discord animation
-let discordClicked = false;
-document.querySelector("#discord").addEventListener("click", () => {
-	let titre = document.querySelector("h1");
-	titre.style.transition = "0.2s";
-	titre.style.transform = "scale(1,0)";
-	setTimeout(() => {
-		if (discordClicked) {
-			titre.innerHTML = "FÉLIX LAVIÉVILLE";
-		} else {
-			titre.innerHTML = 'Tubercule Poirot<span class="hashtag">#6113</span>';
-		}
-		discordClicked = !discordClicked;
-		titre.style.transform = "scale(1)";
-	}, 200);
-	console.log("Discord Clicked");
-});
-
-//reseaux animation
-
-setTimeout(() => {
-	document.querySelectorAll(".hidden").forEach((object, index) => {
-		setTimeout(() => {
-			object.classList.remove("hidden");
-			object.style.transition = "0.5s";
-		}, 200 * index);
-	});
-}, 500);
+let path = window.location.pathname;
+let page = path.split("/").pop();
+console.log("Path : "+path+" | Page : "+page);
 
 //burger
 
@@ -54,7 +26,57 @@ burgerButton.addEventListener("click", () => {
 
 	//supprimer le temps de transition
 	setTimeout(() => {
-		aside.style.transition = "0";
+		aside.style.transition = "0s";
 		main.style.transition = "0";
 	}, 500);
 });
+
+//animations de l'accueil
+if(path==="/"){
+	//discord animation
+	let discordClicked = false;
+	document.querySelector("#discord").addEventListener("click", () => {
+		let titre = document.querySelector("h1");
+		titre.style.transition = "0.2s";
+		titre.style.transform = "scale(1,0)";
+		setTimeout(() => {
+			if (discordClicked) {
+				titre.innerHTML = "FÉLIX LAVIÉVILLE";
+			} else {
+				titre.innerHTML = 'Tubercule Poirot<span class="hashtag">#6113</span>';
+			}
+			discordClicked = !discordClicked;
+			titre.style.transform = "scale(1)";
+		}, 200);
+		console.log("Discord Clicked");
+	});
+	//réseaux animation
+
+	setTimeout(() => {
+		document.querySelectorAll(".hidden").forEach((object, index) => {
+			setTimeout(() => {
+				object.classList.remove("hidden");
+				object.style.transition = "0.5s";
+			}, 200 * index);
+		});
+	}, 500);
+}
+
+//bouton projet
+
+if(path==="/projets" && (page==="projets" || page==="index.html")){
+	let randomDuPif = document.querySelector("button");
+	let listeProjets = document.querySelectorAll("ul a");
+	randomDuPif.addEventListener('click', ()=>{
+		window.location.href = listeProjets[Math.floor(Math.random() * listeProjets.length)].href;
+	})
+
+	document.querySelectorAll("ul li").forEach((item, index)=>{
+		setTimeout(()=>{
+			item.style.transition = "0.5s ease-out";
+			item.classList.remove("list-hidden");
+			console.log(index);
+		}, 300*index);
+	})
+
+}
