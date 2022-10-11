@@ -5,6 +5,17 @@ let pageDir = tempPath.pop();
 if(page ==="") page = "index.html";
 console.log("Path : "+path+" | Dir : "+pageDir+" | Page : "+page);
 
+//header scroll
+
+onscroll=()=>{
+	if(window.scrollY>20){
+		document.querySelector('header').style.background = "#261726"
+	}else{
+		document.querySelector('header').style.background = "transparent"
+
+	}
+}
+
 //burger
 
 let burgerButton = document.querySelector("#burger");
