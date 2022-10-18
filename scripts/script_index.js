@@ -7,14 +7,23 @@ console.log("Path : "+path+" | Dir : "+pageDir+" | Page : "+page);
 
 //header scroll
 
+let blurred = false;
+
 onscroll=()=>{
 	if(window.scrollY>20){
-		document.querySelector('header').style.background = "#261726"
+		if(!blurred) {
+			document.querySelector('header').classList.add("blur");
+			blurred = true;
+		}
 	}else{
-		document.querySelector('header').style.background = "transparent"
+		if(blurred) {
+			document.querySelector('header').classList.remove("blur");
+			blurred = false;
+		}
 
 	}
 }
+
 
 //burger
 

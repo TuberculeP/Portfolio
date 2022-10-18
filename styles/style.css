@@ -22,6 +22,9 @@ header {
   align-items: center;
   justify-content: space-between;
 }
+header.blur {
+  backdrop-filter: blur(10px);
+}
 header h2 {
   margin: 0 40px;
 }
@@ -217,11 +220,12 @@ main.project h3 {
 }
 main.project img {
   width: 100%;
+  max-width: 600px;
   height: 250px;
-  background: black;
+  background: transparent;
   border: none;
   margin: 50px;
-  object-fit: cover;
+  object-fit: contain;
 }
 main.project blockquote {
   font-size: 20px;
@@ -269,6 +273,10 @@ canvas {
   mix-blend-mode: screen;
   opacity: 50%;
   overflow: hidden;
+}
+
+a.no-deco {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
