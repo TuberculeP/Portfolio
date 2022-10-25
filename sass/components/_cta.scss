@@ -1,0 +1,19 @@
+div.cta {
+  width: fit-content;
+
+  button, a.button {
+    transition: 0.1s;
+    text-decoration: none;
+    background: none;
+    border: 2px solid #8dc8ff;
+    color: #8dc8ff;
+    border-radius: 0;
+    font-size: 16px;
+    padding: 15px;
+    box-shadow: 0 0 5px rgba(141, 200, 255, 0.6823529412);
+    &:hover{
+      box-shadow: 0 0 10px rgb(141, 200, 255);
+    }
+  }
+}
+

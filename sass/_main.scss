@@ -1,0 +1,154 @@
+@use "abstracts";
+@use "base";
+@use "layout";
+@use "components";
+
+*{
+  color: abstracts.$text-color;
+}
+
+body {
+  background: linear-gradient(180deg, abstracts.$rad-top 0%, abstracts.$rad-bottom 76.04%);
+}
+
+
+div.head-pad {
+  height: 100px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-stretch: condensed;
+}
+
+h1 {
+  font-size: 35px;
+  border-width: 2px;
+  border-color: #f0eeee;
+  border-style: solid hidden;
+  padding: 5px;
+  width: fit-content;
+  margin: 20px auto;
+}
+h1 span.hashtag {
+  font-family: inherit;
+  color: #868686;
+}
+
+h2 {
+  font-size: 32px;
+  color: #ff90fb;
+}
+
+main .border {
+  width: fit-content;
+  padding: 7px;
+  border: 3px solid #ff90fb;
+  box-shadow: 0 0 5px rgba(255, 144, 251, 0.6823529412);
+  border-radius: 100%;
+  margin: 0 auto;
+}
+
+main ul {
+  margin: 30px;
+  list-style: none;
+}
+main ul li {
+  padding: 5px;
+  margin: 5px;
+  font-size: 20px;
+}
+main ul li:before {
+  content: "[ ";
+}
+main ul li:after {
+  content: " ]";
+}
+main ul li.list-hidden {
+  transform: translateY(100px);
+  opacity: 0;
+}
+main ul li div {
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+}
+main.project p {
+  margin-bottom: 30px;
+}
+main.project h1 {
+  border-style: solid none none;
+  width: 250px;
+  text-align: center;
+}
+main.project h3 {
+  border-style: none none solid;
+  width: 250px;
+  text-align: center;
+  margin: 30px auto 60px;
+  font-size: 24px;
+}
+main.project img {
+  width: 100%;
+  max-width: 600px;
+  height: 250px;
+  background: transparent;
+  border: none;
+  margin: 50px;
+  object-fit: contain;
+}
+main.project blockquote {
+  font-size: 20px;
+  max-width: 80vw;
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+}
+main.project blockquote i {
+  color: inherit;
+}
+main.project blockquote:before, main.project blockquote:after {
+  color: #ff90fb;
+  content: "“";
+  display: block;
+  font-size: 30px;
+  text-align: left;
+}
+main.project blockquote:after {
+  content: "”";
+  text-align: right;
+}
+
+aside {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(100%);
+}
+aside nav {
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  gap: 10px;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  mix-blend-mode: screen;
+  opacity: 50%;
+  overflow: hidden;
+}
+
+a.no-deco {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */
