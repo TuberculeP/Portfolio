@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles/style.css" />
+  <link rel="shortcut icon" href="../media/favicon.ico" type="image/x-icon">
+  <title>Un projet - Félix Laviéville</title>
+</head>
+<body>
+<div id="p5-anim"></div>
+<header>
+  <a href="/projets/" class="no-deco"><h2>Projets</h2></a>
+  <div id="burger" onclick="this.classList.toggle('active')">
+    <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="150"
+            height="150"
+            viewBox="0 0 200 200"
+    >
+      <g stroke-width="6.5" stroke-linecap="round">
+        <path
+                d="M72 82.286h28.75"
+                fill="#009100"
+                fill-rule="evenodd"
+                stroke="#F0EEEE"
+        />
+        <path
+                d="M100.75 103.714l72.482-.143c.043 39.398-32.284 71.434-72.16 71.434-39.878 0-72.204-32.036-72.204-71.554"
+                fill="none"
+                stroke="#F0EEEE"
+        />
+        <path
+                d="M72 125.143h28.75"
+                fill="#009100"
+                fill-rule="evenodd"
+                stroke="#F0EEEE"
+        />
+        <path
+                d="M100.75 103.714l-71.908-.143c.026-39.638 32.352-71.674 72.23-71.674 39.876 0 72.203 32.036 72.203 71.554"
+                fill="none"
+                stroke="#fff"
+        />
+        <path
+                d="M100.75 82.286h28.75"
+                fill="#009100"
+                fill-rule="evenodd"
+                stroke="#fff"
+        />
+        <path
+                d="M100.75 125.143h28.75"
+                fill="#009100"
+                fill-rule="evenodd"
+                stroke="#fff"
+        />
+      </g>
+    </svg>
+  </div>
+</header>
+<div class="head-pad"></div>
+<main class="project">
+
+  <h1 class="project-title">Ray Tracing</h1>
+  <img src="/media/ray2.png" alt="" class="project-img">
+  <h3 class="project-title">Un script de rendu d'image avec Python</h3>
+
+  <p>Je vous présente un petit projet sympathique réalisé au début de la fac !</p>
+
+  <p>Le but du TP était de pouvoir calculer la réfraction de la lumière sur des objets simples via Python3.<br>
+    Ce projet est plus mathématique que purement algorithmique puisque 80% de la difficulté résidait dans l'implémentation
+    des calculs vectoriels sur Python.
+  </p>
+
+  <img src="/media/ray_code.png" alt="Fonction 9 du projet Ray" class="project-img">
+
+  <p>Une fois ceci fait, on donnait à notre programme un fichier scene contenant des informations sur les objets présents dans la scène, puis le rendu s'effectuait !</p>
+
+  <img src="/media/ray_scene.png" alt="Scène du Rendu 1" class="project-img">
+  <img src="/media/ray1.png" alt="Scène du Rendu 1" class="project-img">
+
+  <p>Le rendu prend entre 15 et 30 secondes par images pour des scènes peu complexes mais l'application en python d'équations physiques de la lumière était très enrichissant.</p>
+
+</main>
+<aside>
+  <nav>
+    <a href="./">Projets</a>
+    <a href="../">Accueil</a>
+  </nav>
+</aside>
+<script src="../scripts/p5.min.js"></script>
+<script src="../scripts/background_anim.js"></script>
+<script src="../scripts/script_index.js"></script>
+</body>
+</html>
