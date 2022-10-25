@@ -1,10 +1,3 @@
-let path = window.location.pathname;
-tempPath = path.split("/");
-let page = tempPath.pop();
-let pageDir = tempPath.pop();
-if(page ==="") page = "index.html";
-console.log("Path : "+path+" | Dir : "+pageDir+" | Page : "+page);
-
 //header scroll
 
 let blurred = false;
@@ -55,7 +48,7 @@ burgerButton.addEventListener("click", () => {
 });
 
 //animations de l'accueil
-if(page==="index.html" && (path ==="/" || path ==="/Portfolio/")){
+if(document.body.classList.contains("home")){
 	//discord animation
 	let discordClicked = false;
 	document.querySelector("#discord").addEventListener("click", () => {
@@ -87,7 +80,7 @@ if(page==="index.html" && (path ==="/" || path ==="/Portfolio/")){
 
 //bouton projet
 
-if(page==="index.html" && pageDir ==="projets"){
+if(document.body.classList.contains("project")){
 	let randomDuPif = document.querySelector("button");
 	let listeProjets = document.querySelectorAll("ul a");
 	randomDuPif.addEventListener('click', ()=>{
