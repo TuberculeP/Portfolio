@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb630c41-40c9-417b-b728-070c52f2ab9f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/background_anim.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/background_anim.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projets/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projets/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projets/magic-knob.html" beforeDir="false" afterPath="$PROJECT_DIR$/projets/magic-knob.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projets/ray.html" beforeDir="false" afterPath="$PROJECT_DIR$/projets/ray.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projets/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/projets/template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projets/triminos.html" beforeDir="false" afterPath="$PROJECT_DIR$/projets/triminos.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +79,7 @@
       <workItem from="1666071976426" duration="9395000" />
       <workItem from="1666091440715" duration="1380000" />
       <workItem from="1666678184677" duration="3171000" />
-      <workItem from="1666682187188" duration="15396000" />
+      <workItem from="1666682187188" duration="16052000" />
     </task>
     <servers />
   </component>
