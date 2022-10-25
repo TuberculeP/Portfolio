@@ -73,6 +73,9 @@ if(document.body.classList.contains("home")){
 			setTimeout(() => {
 				object.classList.remove("hidden");
 				object.style.transition = "0.5s";
+				setTimeout(()=>{
+					object.style.transition = "0.1s";
+				}, 500)
 			}, 200 * index);
 		});
 	}, 500);

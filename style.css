@@ -4,6 +4,10 @@
   font-family: "Fira Code", monospace;
 }
 
+p {
+  font-size: 17px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -83,6 +87,95 @@ header path:nth-child(5) {
 header path:nth-child(6) {
   transform-origin: 62% 52%;
 }
+@media screen and (min-width: 800px) {
+  header.blur {
+    backdrop-filter: none;
+  }
+  header #burger {
+    display: none;
+  }
+}
+
+main {
+  min-height: calc(100vh - 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main section {
+  margin: 40px auto 0;
+}
+main p {
+  max-width: 320px;
+  border-width: 2px;
+  border-color: #ff90fb;
+  border-style: hidden solid hidden hidden;
+  padding-right: 10px;
+}
+main div.cta {
+  margin: 40px auto 0;
+}
+main #img_profile {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background: url("media/profile_min.jpg") top 15% left 47%;
+  background-size: 260%;
+}
+main .reseaux {
+  width: fit-content;
+  margin: 0 auto;
+}
+main .reseaux > * {
+  padding: 0 15px;
+}
+main .reseaux #discord:hover, main .reseaux #github:hover, main .reseaux #mail:hover {
+  filter: drop-shadow(0 0 5px rgba(141, 200, 255, 0.6823529412));
+}
+main .reseaux .hidden {
+  transform: translateY(50px);
+  opacity: 0;
+}
+@media screen and (min-width: 800px) {
+  main .ondesktop.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  main section {
+    margin: 10px auto 0;
+  }
+  main p {
+    max-width: 500px;
+  }
+  main div.cta {
+    margin: 80px auto;
+  }
+  main #img_profile {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+div.cta {
+  width: fit-content;
+}
+div.cta button, div.cta a.button {
+  transition: 0.1s;
+  text-decoration: none;
+  background: none;
+  border: 2px solid #8dc8ff;
+  color: #8dc8ff;
+  border-radius: 0;
+  font-size: 16px;
+  padding: 15px;
+  box-shadow: 0 0 5px rgba(141, 200, 255, 0.6823529412);
+}
+div.cta button:hover, div.cta a.button:hover {
+  box-shadow: 0 0 10px rgb(141, 200, 255);
+}
 
 * {
   color: #f0eeee;
@@ -123,26 +216,6 @@ h2 {
   color: #ff90fb;
 }
 
-p {
-  font-size: 17px;
-}
-
-main {
-  min-height: calc(100vh - 100px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-main #img_profile {
-  width: 200px;
-  height: 200px;
-  border-radius: 100%;
-  background: url("media/profile.jpg") top 15% left 47%;
-  background-size: 260%;
-}
-
 main .border {
   width: fit-content;
   padding: 7px;
@@ -150,54 +223,6 @@ main .border {
   box-shadow: 0 0 5px rgba(255, 144, 251, 0.6823529412);
   border-radius: 100%;
   margin: 0 auto;
-}
-
-main .reseaux {
-  width: fit-content;
-  margin: 0 auto;
-}
-
-main .reseaux > * {
-  padding: 0 15px;
-}
-
-main .reseaux #discord:hover,
-main .reseaux #github:hover,
-main .reseaux #mail:hover {
-  filter: drop-shadow(0 0 5px rgba(141, 200, 255, 0.6823529412));
-}
-
-main .reseaux .hidden {
-  transform: translateY(50px);
-  opacity: 0;
-}
-
-main section {
-  margin: 40px auto 0;
-}
-
-main p {
-  max-width: 320px;
-  border-width: 2px;
-  border-color: #ff90fb;
-  border-style: hidden solid hidden hidden;
-  padding-right: 10px;
-}
-
-main div.cta {
-  width: fit-content;
-  margin: 40px auto 60px;
-}
-
-main div.cta button, main div.cta a.button {
-  text-decoration: none;
-  background: none;
-  border: 2px solid #8dc8ff;
-  color: #8dc8ff;
-  border-radius: 0;
-  font-size: 16px;
-  padding: 15px;
-  box-shadow: 0 0 5px rgba(141, 200, 255, 0.6823529412);
 }
 
 main ul {
