@@ -10,7 +10,7 @@ SCSS is configured to work as 7_1 architecture :
 ├── _main.scss
 |
 ├── abstracts
-├── _index.scss
+|    ├── _index.scss
 |    └── _variables.scss
 ├── base
 |    ├── _index.scss
