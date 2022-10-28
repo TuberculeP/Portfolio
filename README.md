@@ -60,3 +60,6 @@ At the repository root :
 ```sh
 sass --watch sass/_main.scss:style.css
 ```
+### Starting Website
+
+> As it remains a pure Front-End project, no framework or server is needed to navigate this website.
