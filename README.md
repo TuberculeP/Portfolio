@@ -29,7 +29,7 @@ Apps used :
 - `ImgBot` (img size optimization)
 - `Mend Bolt` (code security & quality check)
 - `Vercel` (Front-End deployer)
-- `Zapper` (Service connector : GitHub-Discord for this project)
+- `Zapier` (Service connector : GitHub-Discord for this project)
 
 This repository is linked to `Vercel` at the URL :<br> https://portfolio-tuberculep.vercel.app/
 
