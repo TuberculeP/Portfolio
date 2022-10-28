@@ -10,19 +10,19 @@ SCSS is configured to work as 7_1 architecture :
 ├── _main.scss
 |
 ├── abstracts
-|    ├── _index.scss
-|    └── _variables.scss
+|   ├── _index.scss
+|   └── _variables.scss
 ├── base
-|    ├── _index.scss
-|    ├── _reset.scss
-|    └── _typography.scss
+|   ├── _index.scss
+|   ├── _reset.scss
+|   └── _typography.scss
 ├── components
-|     ├── _cta.scss
-|     └── _index.scss
+|   ├── _cta.scss
+|   └── _index.scss
 └── layout
-├── _header.scss
-├── _index.scss
-└── _main.scss
+    ├── _header.scss
+    ├── _index.scss
+    └── _main.scss
 ```
 
 Apps used :
