@@ -2,14 +2,6 @@
 <html lang="fr">
 <head>
 	<!-- Navigateur & SEO -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-39P8PYF1MM"></script>
-	<script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-39P8PYF1MM');
-	</script>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,6 +23,8 @@
 	<link rel="shortcut icon" href="/media/favicon.ico" type="image/x-icon">
     
     <!-- icones -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="preload" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" as="style"
+          onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"></noscript>
     <title><?=$title?></title>
 </head>
