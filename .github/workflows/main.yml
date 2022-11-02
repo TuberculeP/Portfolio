@@ -14,3 +14,12 @@ jobs:
           server: ftp.cluster029.hosting.ovh.net
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: www/dev/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            fileToExclude.txt
+            sass/**
+            style.css.map
+            .github/**
