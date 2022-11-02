@@ -5,34 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb630c41-40c9-417b-b728-070c52f2ab9f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projets/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projets/magic-knob.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass/components/_canvas.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass/components/_h1.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass/components/_paragraph.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass/layout/_aside.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass/layout/_main-project.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/footer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/head.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Portfolio.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Portfolio.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projets/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projets/magic-knob.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/_main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/abstracts/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/abstracts/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/base/_reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/base/_reset.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/base/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/base/_typography.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/components/_cta.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/components/_cta.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/components/_index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/components/_index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/layout/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layout/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/layout/_index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layout/_index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/layout/_main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layout/_main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/script_index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/script_index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style.css.map" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +93,7 @@
       <workItem from="1667376015537" duration="1037000" />
       <workItem from="1667377144751" duration="1379000" />
       <workItem from="1667406862635" duration="5095000" />
-      <workItem from="1667412899796" duration="2014000" />
+      <workItem from="1667412899796" duration="2401000" />
     </task>
     <servers />
   </component>
