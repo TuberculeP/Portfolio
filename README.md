@@ -64,3 +64,5 @@ sass --watch sass/_main.scss:style.css
 ### Starting Website
 
 > As it remains a pure Front-End project, no framework or server is needed to navigate this website.
+
+> REMARQUE A L'INTENTION DES REGARDS DUBITATIFS : Oui j'ai effectivement changé de statique à serveur pour plus de facilité et j'ai cru que Vercel allait me laisser m'en tirer comme ça, du coup pour la correction, ce repository correspond à celui présenté vendredi
