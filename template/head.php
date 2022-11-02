@@ -7,12 +7,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Bienvenue sur mon portfolio ! Je suis étudiant en 2e année à l'IIM en Coding & Digital Innovation et je vous présente ici quelques projets !">
 	<meta name="keywords" content="portfolio code study student">
-	<link rel="canonical" href="https://felix-lavieville.com/">
+	<link rel="canonical" href="<?=$meta_url?>">
 	<link rel="author" href="mailto:lavieville.felix@gmail.com">
 	<!--Embed -->
-	<meta content=<?=$meta_title?> property="og:title">
-	<meta content=<?=$meta_desc?> property="og:description">
-	<meta content=<?=$meta_url?>  property="og:url">
+	<meta content="<?=$meta_title?>" property="og:title">
+	<meta content="<?=$meta_desc?>" property="og:description">
+	<meta content="<?=$meta_url?>"  property="og:url">
 	<meta content="https://felix-lavieville.com/media/profile_square.webp" property="og:image">
 	<meta content="#FF90FB" data-react-helmet="true" name="theme-color">
 	
