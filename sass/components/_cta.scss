@@ -1,8 +1,10 @@
 div.cta {
   width: fit-content;
+  box-sizing: border-box;
+  margin: 20px auto;
 
   button, a.button {
-    transition: 0.1s;
+    transition: box-shadow 0.1s;
     text-decoration: none;
     background: none;
     border: 2px solid #8dc8ff;
@@ -16,4 +18,3 @@ div.cta {
     }
   }
 }
-

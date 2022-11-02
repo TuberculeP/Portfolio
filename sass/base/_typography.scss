@@ -7,3 +7,34 @@
 p {
   font-size: 17px;
 }
+a{
+  font-size: inherit;
+}
+nav{
+    font-size: 15px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-stretch: condensed;
+}
+
+h1{
+  font-size: 35px;
+  span.hashtag {
+    font-family: inherit;
+  }
+}
+
+h2{
+  font-size: 32px;
+}
+
+i{
+  font-size: 70px;
+  &:hover{
+    font-size: 75px;
+  }
+}

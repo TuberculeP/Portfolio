@@ -1,23 +1,3 @@
-//header scroll
-
-let blurred = false;
-
-onscroll=()=>{
-	if(window.scrollY>20){
-		if(!blurred) {
-			document.querySelector('header').classList.add("blur");
-			blurred = true;
-		}
-	}else{
-		if(blurred) {
-			document.querySelector('header').classList.remove("blur");
-			blurred = false;
-		}
-
-	}
-}
-
-
 //burger
 
 let burgerButton = document.querySelector("#burger");
@@ -47,9 +27,33 @@ burgerButton.addEventListener("click", () => {
 	}, 500);
 });
 
+//background-color automatique du burger
+
+/* La hauteur de l'écran se situe entre 0 et hauteurTotale
+* La couleur doit évoluer entre (G23,B38) => (G42,B46)
+* Tentons de créer une fonction de compute transition
+* */
+function compute_transition(value1, value2, maxheight, height) {
+	let diff = Math.abs(value2 - value1);
+	let percentage = height/maxheight;
+	return value1 + Math.floor(diff*percentage)
+}
+let hauteurTotale = document.body.clientHeight;
+window.onscroll = () =>{
+	burgerButton.style.backgroundColor = `rgb(
+	38, 
+	${compute_transition(23, 42, hauteurTotale, window.scrollY)},
+	 ${compute_transition(38, 46, hauteurTotale, window.scrollY)}`;
+}
+
+
 //animations de l'accueil
 if(document.body.classList.contains("home")){
 	//discord animation
+
+	document.querySelector('#navAccueil').classList.add("active");
+
+
 	let discordClicked = false;
 	document.querySelector("#discord").addEventListener("click", () => {
 		let titre = document.querySelector("h1");
@@ -79,11 +83,24 @@ if(document.body.classList.contains("home")){
 			}, 200 * index);
 		});
 	}, 500);
+
+	//icones languages
+	document.querySelectorAll(".languages div i").forEach(icon =>{
+		icon.addEventListener('mouseover', ()=>{
+			icon.classList.add('colored');
+		})
+		icon.addEventListener('mouseleave', () =>{
+			icon.classList.remove('colored');
+		})
+	})
 }
 
 //bouton projet
 
 if(document.body.classList.contains("project")){
+
+	document.querySelector('#navProjet').classList.add("active");
+
 	let randomDuPif = document.querySelector("button");
 	let listeProjets = document.querySelectorAll("ul a");
 	randomDuPif.addEventListener('click', ()=>{
