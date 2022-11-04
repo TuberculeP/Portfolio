@@ -15,7 +15,7 @@ require_once 'template/header.php';
 <main>
     <div class="index presentation">
         <div class="border">
-            <div id="img_profile"></div>
+            <img src="/media/tubercule_neon.webp" alt="Félix Laviéville" id="img_profile">
         </div>
 
         <div>
