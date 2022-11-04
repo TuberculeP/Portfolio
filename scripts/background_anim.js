@@ -1,4 +1,4 @@
-if(document.body.clientWidth > 800) {
+
 	var num = 300;
 	var noiseScale = 500,
 		noiseStrength = 1;
@@ -84,4 +84,3 @@ if(document.body.clientWidth > 800) {
 			ellipse(this.loc.x, this.loc.y, this.loc.z);
 		}
 	}
-}
