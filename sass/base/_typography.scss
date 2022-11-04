@@ -32,9 +32,11 @@ h2{
   font-size: 32px;
 }
 
-i{
-  font-size: 70px;
-  &:hover{
-    font-size: 75px;
+.competence{
+  i{
+    font-size: 70px;
+    &:hover{
+      font-size: 75px;
+    }
   }
 }

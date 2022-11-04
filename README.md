@@ -59,7 +59,7 @@ choco install sass
 
 At the repository root :
 ```sh
-sass --watch sass/_main.scss:style.css
+sass --watch sass/main.scss:style.css
 ```
 ### Starting Website
 

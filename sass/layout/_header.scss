@@ -14,6 +14,16 @@ header {
   align-items: center;
   justify-content: right;
 
+  .construction{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #8dc8ff;
+    color: #261726;
+    padding: 10px;
+    margin: 10px;
+  }
+
   h2 {
     margin: 0 40px;
   }
@@ -119,7 +129,7 @@ header {
           display: block;
           width: 100%;
           height: 100%;
-          transform: translateX(100%);
+          transform: translateX(-100%);
           z-index: -10;
         }
         &:hover{

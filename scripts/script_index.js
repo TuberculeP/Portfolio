@@ -42,8 +42,8 @@ let hauteurTotale = document.body.clientHeight;
 window.onscroll = () =>{
 	burgerButton.style.backgroundColor = `rgb(
 	38, 
-	${compute_transition(23, 42, hauteurTotale, window.scrollY)},
-	 ${compute_transition(38, 46, hauteurTotale, window.scrollY)}`;
+	${compute_transition(23, 42, hauteurTotale + window.innerHeight, window.scrollY)},
+	 ${compute_transition(38, 46, hauteurTotale + window.innerHeight, window.scrollY)}`;
 }
 
 
@@ -84,7 +84,7 @@ if(document.body.classList.contains("home")){
 		});
 	}, 500);
 
-	//icones languages
+	//icônes languages
 	document.querySelectorAll(".languages div i").forEach(icon =>{
 		icon.addEventListener('mouseover', ()=>{
 			icon.classList.add('colored');
@@ -102,7 +102,7 @@ if(document.body.classList.contains("project")){
 	document.querySelector('#navProjet').classList.add("active");
 
 	let randomDuPif = document.querySelector("button");
-	let listeProjets = document.querySelectorAll("ul a");
+	let listeProjets = document.querySelectorAll(".grid-container a");
 	randomDuPif.addEventListener('click', ()=>{
 		window.location.href = listeProjets[Math.floor(Math.random() * listeProjets.length)].href;
 	})

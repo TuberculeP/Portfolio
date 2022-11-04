@@ -14,16 +14,35 @@ require_once '../template/header.php';
 ?>
 	
 	<main>
-		<h1>PROJETS</h1>
-		<p>Baladez-vous sur les pages ci-dessous pour découvrir les différents
-			projets personnels ou scolaires que j'ai mené à bien depuis le
-			début de mes études !</p>
-		<div class="cta"><button>UN PROJET AU PIF</button></div>
-		<ul>
-			<li class="list-hidden"><div><a href="triminos.html">Triminos</a></div></li>
-			<li class="list-hidden"><div><a href="magic-knob.php">Magic Knob</a></div></li>
-			<li class="list-hidden"><div><a href="ray.html">Ray Tracing</a></div></li>
-		</ul>
+		<div class="text">
+            <h1>PROJETS</h1>
+            <p>Baladez-vous sur les pages ci-dessous pour découvrir les différents
+                projets personnels ou scolaires que j'ai mené à bien depuis le
+                début de mes études !
+            </p>
+            <div class="cta">
+                <button>Indécis ?</button>
+            </div>
+        </div>
+        
+        <div class="grid-container">
+            <a href="magic-knob.php" class="grid-main">
+                <h3>Magic Knob</h3>
+                <img src="/media/magic-knob-schema-montage.webp" alt="magic knob">
+            </a>
+            <a href="ray.html" class="grid-sec">
+                <h3>Ray Tracing</h3>
+                <img src="/media/ray1.webp" alt="Ray Tracing">
+            </a>
+            <a href="triminos.html" class="grid-sec">
+                <h3>Triminos</h3>
+                <img src="/media/trimi_5.webp" alt="magic knob">
+            </a>
+            <a href="template.html" class="grid-sec">
+                <h3>Magic Knob</h3>
+                <img src="/media/magic-knob-schema-montage.webp" alt="magic knob">
+            </a>
+        </div>
 	</main>
 
 <?php
