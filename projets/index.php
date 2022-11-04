@@ -26,7 +26,11 @@ require_once '../template/header.php';
         </div>
         
         <div class="grid-container">
-            <a href="magic-knob.php" class="grid-main">
+            <a href="passfrance.php" class="grid-main">
+                <h3>PassFrance</h3>
+                <img src="/media/passfrance_main.webp" alt="passfrance">
+            </a>
+            <a href="magic-knob.php" class="grid-sec">
                 <h3>Magic Knob</h3>
                 <img src="/media/magic-knob-schema-montage.webp" alt="magic knob">
             </a>
@@ -36,11 +40,7 @@ require_once '../template/header.php';
             </a>
             <a href="triminos.html" class="grid-sec">
                 <h3>Triminos</h3>
-                <img src="/media/trimi_5.webp" alt="magic knob">
-            </a>
-            <a href="template.html" class="grid-sec">
-                <h3>Magic Knob</h3>
-                <img src="/media/magic-knob-schema-montage.webp" alt="magic knob">
+                <img src="/media/trimi_5.webp" alt="triminos">
             </a>
         </div>
 	</main>
