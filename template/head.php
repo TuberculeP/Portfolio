@@ -14,8 +14,8 @@
 	<meta content="<?=$meta_desc?>" property="og:description">
 	<meta content="<?=$meta_url?>"  property="og:url">
 	<meta content="https://felix-lavieville.com/media/profile_square.webp" property="og:image">
-    <meta property="og:image:width" content="600" />
-    <meta property="og:image:height" content="600" />
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="600">
 	<meta content="#FF90FB" data-react-helmet="true" name="theme-color">
 	
 	<link rel="stylesheet" href="/style.css">

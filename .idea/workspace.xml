@@ -5,18 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb630c41-40c9-417b-b728-070c52f2ab9f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/projets/ray.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projets/triminos.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/segzeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projets/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/projets/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projets/magic-knob.php" beforeDir="false" afterPath="$PROJECT_DIR$/projets/magic-knob.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projets/passfrance.php" beforeDir="false" afterPath="$PROJECT_DIR$/projets/passfrance.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projets/ray.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projets/template.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projets/triminos.html" beforeDir="false" afterPath="$PROJECT_DIR$/projets/triminos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projets/ray.php" beforeDir="false" afterPath="$PROJECT_DIR$/projets/ray.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projets/triminos.php" beforeDir="false" afterPath="$PROJECT_DIR$/projets/triminos.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/base/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/base/_typography.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/layout/_main-project.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layout/_main-project.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style.css.map" afterDir="false" />
     </list>
@@ -112,7 +107,7 @@
       <workItem from="1667464339561" duration="24000" />
       <workItem from="1667469928159" duration="5232000" />
       <workItem from="1667544964333" duration="2657000" />
-      <workItem from="1667574886741" duration="10517000" />
+      <workItem from="1667574886741" duration="10864000" />
     </task>
     <servers />
   </component>
