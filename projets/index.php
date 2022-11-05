@@ -34,11 +34,11 @@ require_once '../template/header.php';
                 <h3>Magic Knob</h3>
                 <img src="/media/magic-knob-schema-montage.webp" alt="magic knob">
             </a>
-            <a href="ray.html" class="grid-sec">
+            <a href="ray.php" class="grid-sec">
                 <h3>Ray Tracing</h3>
                 <img src="/media/ray1.webp" alt="Ray Tracing">
             </a>
-            <a href="triminos.html" class="grid-sec">
+            <a href="triminos.php" class="grid-sec">
                 <h3>Triminos</h3>
                 <img src="/media/trimi_5.webp" alt="triminos">
             </a>
