@@ -1,40 +1,65 @@
 main{
-
+  height: fit-content;
   min-height: calc(100vh - 100px);
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  section {
-    margin: 40px auto 0;
-  }
-  p {
-    max-width: 320px;
-    border-width: 2px;
-    border-color: #ff90fb;
-    border-style: hidden solid hidden hidden;
-    padding-right: 10px;
-  }
+}
 
-  div.cta{
-    margin: 40px auto 0;
+body.index.home main{
+  //profile & animations
+  .imgprofile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .border {
+      width: 420px;
+      height: 420px;
+      position: absolute;
+      padding: 7px;
+      border: 3px solid #ff90fb;
+      box-shadow: 0 0 5px rgba(255, 144, 251, 0.6823529412);
+      border-radius: 100%;
+      animation: rotateCircles 5s linear infinite;
+      display: flex;
+      justify-content: center;
+      z-index: 1;
+      &::before {
+        content: '';
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background: rgb(255, 255, 255);
+        top: -6px;
+        border-radius: 50%;
+        box-shadow: 0 0 10px 6px rgba(255, 144, 251, 0.76);
+      }
+    }
+    @keyframes rotateCircles {
+      from {
+        transform: rotate(0);
+      } to {
+          transform: rotate(360deg);
+        }
+    }
+    #img_profile {
+      z-index: -1;
+      width: 400px;
+      height: 400px;
+      border-radius: 100%;
+      object-fit: cover;
+      object-position: top 15% left 47%;
+    }
   }
-
-  #img_profile {
-    width: 200px;
-    height: 200px;
-    border-radius: 100%;
-    background: url("media/profile_min.webp") top 15% left 47%;
-    background-size: 260%;
-  }
-
+  //liste icônes réseaux
   .reseaux {
     width: fit-content;
-    margin: 0 auto;
-    > * {
-      padding: 0 15px;
-    }
-    #discord:hover,#github:hover,#mail:hover {
-      filter: drop-shadow(0 0 5px rgba(141, 200, 255, 0.6823529412));
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    #discord,#github,#mail {
+      width: fit-content;
+      &:hover{
+        filter: drop-shadow(0 0 5px rgba(141, 200, 255, 0.6823529412));
+      }
     }
     .hidden {
       transform: translateY(50px);
@@ -43,39 +68,265 @@ main{
   }
   .pseudo{
     width: 275px;
+    margin: auto;
     h1{
-      width: fit-content;
-      margin-left: auto;
-      margin-right: auto;
+      margin: auto;
     }
   }
 
-
-
-  @media screen and (min-width: 800px){
-    justify-content: center;
-    .ondesktop{
-      &.row{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 40px;
+  .index{
+    &.presentation{
+      height: calc(100vh - 200px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 100px;
+      section{
+        margin: 30px 0;
       }
     }
-    section{
-      margin: 10px auto 0;
+    &.competence{
+      border-radius: 50px;
+      margin: 0 50px;
+      padding-top: 30px;
+      min-height: 100vh;
+      background-color: #0f0f11;
+      >div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 50px;
+        min-height: calc(100vh - 70px);
+      }
+      div.languages{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 50px;
+        margin: 50px 20px;
+
+        div{
+          width: 115px;
+          i{
+            margin: 0 auto;
+            display: block;
+            width: fit-content;
+            transition: 0.2s;
+          }
+          h3{
+            text-align: center;
+            color: #8dc8ff;
+          }
+        }
+      }
+      div.skills{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        height: max-content;
+        div{
+          border-style: hidden hidden hidden dotted;
+          border-width: 2px;
+          border-color: white;
+          padding-left: 15px;
+          margin: 25px;
+          ul{
+            margin-top: 20px;
+            list-style: none;
+            li::before{
+              content: "↪ ";
+            }
+          }
+        }
+      }
     }
-    p{
-      max-width: 500px;
+  }
+
+  #contact{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    form{
+      background-color: #0f0f11;
+      padding: 40px 60px;
+      border-radius: 25px;
+      i{
+        font-size: 12px;
+        text-align: center;
+      }
+      hr{
+        border: 1px solid #ff90fb;
+        margin-bottom: 20px;
+      }
+      div.input{
+        >*{
+          display: block;
+        }
+        input, select, textarea{
+          padding: 10px;
+          background-color: #1d1d21;
+          color: #f0eeee;
+          border-width: 1px;
+          border-style: hidden hidden hidden solid;
+          border-color: #8dc8ff;
+          width: 300px;
+          resize: none;
+        }
+        textarea{
+          min-height: 100px;
+        }
+        label{
+          margin: 10px 0;
+          color: #8dc8ff;
+        }
+      }
     }
-    div.cta{
-      margin: 40px auto;
+  }
+
+  @media screen and (max-width: 800px) {
+    .index{
+      &.presentation{
+        height: auto;
+        padding-bottom: 40px;
+        flex-direction: column;
+        gap: 20px;
+
+        .border{
+          width: 210px;
+          height: 210px;
+        }
+        #img_profile{
+          width: 200px;
+          height: 200px;
+        }
+      }
+      &.competence{
+        margin: 0;
+        height: auto;
+        padding-bottom: 50px;
+        div.skills{
+          flex-direction: column;
+          align-items: center;
+          div{
+            max-width: 400px;
+            min-width: 350px;
+            margin: 0;
+          }
+        }
+      }
     }
-    #img_profile {
-      width: 250px;
-      height: 250px;
+    #contact{
+      form{
+        padding: 20px;
+      }
     }
   }
 }
 
+body.index.project{
+  main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    p{
+      margin: 30px auto;
+    }
+    div.text{
+      width: 40%;
+    }
+    .grid {
+      &-container {
+        width: 60%;
+        margin-right: 50px;
+        height: 500px;
+        display: grid;
+        gap: 30px;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 3fr 1fr;
+      }
 
+      &-main {
+        grid-row: 1/4;
+        background-color: #8dc8ff;
+        width: 100%;
+        height: 100%;
+      }
+
+      &-sec {
+        background-color: black ;
+        width: 100%;
+        height: 100%;
+      }
+      &-main, &-sec{
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        img{
+          height: 100%;
+          transition: 0.3s;
+        }
+        h3{
+          position: absolute;
+          z-index: 10;
+          top: 0;
+          left: 0;
+          padding: 20px;
+          background-color: #261726;
+          border-radius: 0 0 25px 0;
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.53);
+        }
+        &:hover{
+          img{
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 1050px) {
+      .grid{
+        &-container{
+          margin: auto 20px;
+          grid-template-rows: 3fr 1fr;
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+        &-main{
+          grid-column: 1/4;
+          grid-row: 1/2;
+        }
+      }
+    }
+
+    @media screen and (max-width: 800px) {
+      display: block;
+      padding-bottom: 50px;
+      div.text{
+        width: auto;
+        margin-bottom: 50px;
+        p{
+          max-width: 90%;
+        }
+      }
+      .grid{
+        &-container{
+          width: 90%;
+          margin: 0 auto;
+          display: block;
+          height: auto;
+        }
+        &-main, &-sec{
+          height: auto;
+          margin: 40px 0;
+          img{
+            height: auto;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

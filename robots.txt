@@ -1,0 +1,7 @@
+User-agent: Googlebot
+Disallow: /template/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://felix-lavieville.com/sitemap.xml

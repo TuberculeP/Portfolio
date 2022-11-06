@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="eb630c41-40c9-417b-b728-070c52f2ab9f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,8 +44,12 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/tubercule/Library/CloudStorage/OneDrive-DeVinci/Cloud Étudiant/Institut de l'Internet et du Multimédia/A2 CDI/Portfolio&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;orchideLicense&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -51,10 +58,11 @@
       <recent name="$PROJECT_DIR$/projets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/sass" />
+      <recent name="$PROJECT_DIR$/projets" />
+      <recent name="$PROJECT_DIR$/template" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/sass" />
       <recent name="$PROJECT_DIR$/media" />
-      <recent name="$PROJECT_DIR$/styles" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -75,7 +83,24 @@
       <workItem from="1666682187188" duration="17180000" />
       <workItem from="1666727839451" duration="908000" />
       <workItem from="1666874180002" duration="664000" />
-      <workItem from="1666937265110" duration="1383000" />
+      <workItem from="1666937265110" duration="8590000" />
+      <workItem from="1666963328560" duration="120000" />
+      <workItem from="1666969439508" duration="8000" />
+      <workItem from="1667226411729" duration="14274000" />
+      <workItem from="1667376015537" duration="1037000" />
+      <workItem from="1667377144751" duration="1379000" />
+      <workItem from="1667406862635" duration="5095000" />
+      <workItem from="1667412899796" duration="4864000" />
+      <workItem from="1667459232031" duration="1449000" />
+      <workItem from="1667462436188" duration="8000" />
+      <workItem from="1667463112023" duration="87000" />
+      <workItem from="1667464339561" duration="24000" />
+      <workItem from="1667469928159" duration="5232000" />
+      <workItem from="1667544964333" duration="2657000" />
+      <workItem from="1667574886741" duration="11586000" />
+      <workItem from="1667735208625" duration="12078000" />
+      <workItem from="1667749657145" duration="1860000" />
+      <workItem from="1667752708357" duration="509000" />
     </task>
     <servers />
   </component>

@@ -1,3 +1,10 @@
+div.head-pad {
+  height: 100px;
+  @media screen and (min-width: 800px) {
+    display: none;
+  }
+}
+
 header {
   position: fixed;
   top: 0;
@@ -5,9 +12,16 @@ header {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  &.blur {
-    backdrop-filter: blur(10px);
+  justify-content: right;
+
+  .construction{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #8dc8ff;
+    color: #261726;
+    padding: 10px;
+    margin: 10px;
   }
 
   h2 {
@@ -17,6 +31,12 @@ header {
   #burger {
     cursor: pointer;
     display: flex;
+    background-color: #261726;
+    border-radius: 0 0 0 25px;
+  }
+
+  nav{
+    display: none;
   }
 
   svg {
@@ -75,13 +95,20 @@ header {
   }
 
 
+  @media screen and (min-width: 800px) {
 
-  @media screen and (min-width: 800px){
-    &.blur {
-      backdrop-filter: none;
-    }
+    position: static;
+
     #burger{
       display: none;
+    }
+    nav{
+      display: flex;
+      height: 100px;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      margin: 0 30px;
     }
   }
 }
