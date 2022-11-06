@@ -1,6 +1,6 @@
 <div id="p5-anim"></div>
 <header>
-    <h2 class="construction">En Cours de Construction</h2>
+    <!-- <h2 class="construction">En Cours de Construction</h2> -->
 	<div id="burger" onclick="this.classList.toggle('active')">
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
