@@ -29,14 +29,22 @@
           onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"></noscript>
     <title><?=$title?></title>
+    
     <!-- Balisage JSON-LD généré par l'outil d'aide au balisage de données structurées de Google -->
     <script type="application/ld+json">
         {
             "@context": "http://schema.org",
             "@type": "LocalBusiness",
-            "name": "Félix Laviéville",
+            "name": "FÉLIX LAVIÉVILLE",
             "image": "https://felix-lavieville.com/media/tubercule_neon.webp",
+            "telephone": "07 82 57 39 56",
             "email": "lavieville.felix@gmail.com",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Sartrouville",
+                "addressCountry": "France",
+                "postalCode": "78500"
+            },
             "url": "https://felix-lavieville.com/"
         }
     </script>
