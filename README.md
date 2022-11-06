@@ -7,22 +7,28 @@ Languages : `HTML`, `SCSS`, `JS`
 
 SCSS is configured to work as 7_1 architecture :
 ```
-├── _main.scss
-|
+├── main.scss
 ├── abstracts
-|   ├── _index.scss
-|   └── _variables.scss
+│   ├── _index.scss
+│   └── _variables.scss
 ├── base
-|   ├── _index.scss
-|   ├── _reset.scss
-|   └── _typography.scss
+│   ├── _index.scss
+│   ├── _reset.scss
+│   └── _typography.scss
 ├── components
-|   ├── _cta.scss
-|   └── _index.scss
-└── layout
-    ├── _header.scss
-    ├── _index.scss
-    └── _main.scss
+│   ├── _canvas.scss
+│   ├── _cta.scss
+│   ├── _h1.scss
+│   ├── _index.scss
+│   ├── _nav_a.scss
+│   └── _paragraph.scss
+├── layout
+│   ├── _aside.scss
+│   ├── _header.scss
+│   ├── _index.scss
+│   ├── _main-project.scss
+│   └── _main.scss
+└── main.scss
 ```
 
 Apps used :
@@ -32,6 +38,8 @@ Apps used :
 - `Zapier` (Service connector : GitHub-Discord for this project)
 
 This repository is linked to `Vercel` at the URL :<br> https://portfolio-tuberculep.vercel.app/
+
+
 
 
 Steps to use / edit :
