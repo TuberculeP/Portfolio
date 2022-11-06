@@ -1,8 +1,8 @@
 <?php
 $title = "Ray Tracing PY - Félix Laviéville";
 $meta_title = "Ray Tracing PY - Félix Laviéville";
-$meta_desc = "Découverte de l'électronique et de l'IOT ! Le Magic Knob vous permet de contrôler vos instruments de musique et plugins avec votre main.";
-$meta_url = "https://felix-lavieville.com/projets/magic-knob.php";
+$meta_desc = "Projet de mise en application directe des formules physiques de réflexion et réfraction de la lumière via un script Python3.";
+$meta_url = "https://felix-lavieville.com/projets/ray.php";
 require_once '../template/head.php';
 ?>
 <body>

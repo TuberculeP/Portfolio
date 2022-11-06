@@ -1,9 +1,8 @@
 <?php
-$title = "PassFrance - Félix Laviéville";
-$meta_title = "PassFrance - Félix Laviéville";
-$meta_desc =
-	"PassFrance est un site de présentation d'un service mobilité fictif : 1 Pass unique donnant l'accès à toute la France.";
-$meta_url = "https://felix-lavieville.com/projets/passfrance.php";
+$title = "Les Triminos - Félix Laviéville";
+$meta_title = "Les Triminos - Félix Laviéville";
+$meta_desc = "Prenons un grand cadrillage et retirons lui une case au hasard. Est-ce possible de remplir le reste du cadrillage avec des pièces identiques ?";
+$meta_url = "https://felix-lavieville.com/projets/triminos.php";
 require_once '../template/head.php';
 ?>
 	

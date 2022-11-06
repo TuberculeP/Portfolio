@@ -29,4 +29,15 @@
           onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"></noscript>
     <title><?=$title?></title>
+    <!-- Balisage JSON-LD généré par l'outil d'aide au balisage de données structurées de Google -->
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Félix Laviéville",
+            "image": "https://felix-lavieville.com/media/tubercule_neon.webp",
+            "email": "lavieville.felix@gmail.com",
+            "url": "https://felix-lavieville.com/"
+        }
+    </script>
 </head>
