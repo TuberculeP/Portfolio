@@ -20,10 +20,12 @@
 
     <!--Embed Twitter -->
 
-    <meta property="twitter:image" content="https://felix-lavieville.com/media/profile_square.webp">
-    <meta property="twitter:title" content="<?=$meta_title?>">
-    <meta property="twitter:description" content="<?=$meta_desc?>">
-    <meta property="twitter:image:alt" content="Félix Laviéville">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="<?=$meta_url?>">
+    <meta name="twitter:creator" content="@TuberculeP">
+    <meta name="twitter:title" content="<?=$meta_title?>">
+    <meta name="twitter:description" content="<?=$meta_desc?>">
+    <meta name="twitter:image" content="https://felix-lavieville.com/media/profile_square.webp">
     
     
     <link rel="stylesheet" href="/style.css">
