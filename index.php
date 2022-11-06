@@ -14,8 +14,9 @@ require_once 'template/header.php';
 
 <main>
     <div class="index presentation">
-        <div class="border">
-            <img src="/media/tubercule_neon.webp" alt="Félix Laviéville" id="img_profile">
+        <div class="imgprofile">
+            <div class="border"></div>
+            <img src="/media/tubercule_neon.webp" alt="Félix Laviéville" id="img_profile" width="400px" height="400px">
         </div>
 
         <div>
@@ -43,7 +44,7 @@ require_once 'template/header.php';
                                     <rect width="24" height="24" fill="white"></rect>
                                 </clipPath>
                             </defs></svg></a>
-                    <a href="mailto:lavieville.felix@gmail.com"><svg id="mail" class="hidden" width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="transition: all 0.1s ease 0s;">
+                    <a href="#contact"><svg id="mail" class="hidden" width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="transition: all 0.1s ease 0s;">
                             <path d="M24 7.0595V17.75C24 18.7446 23.6049 19.6984 22.9017 20.4017C22.1984 21.1049 21.2446 21.5 20.25 21.5H3.75C2.75544 21.5 1.80161 21.1049 1.09835 20.4017C0.395088 19.6984 0 18.7446 0 17.75V7.0595L11.619 13.8965C11.7344 13.9646 11.866 14.0005 12 14.0005C12.134 14.0005 12.2656 13.9646 12.381 13.8965L24 7.0595ZM20.25 2C21.1727 1.99985 22.0631 2.33991 22.7508 2.95511C23.4385 3.57031 23.8753 4.41746 23.9775 5.3345L12 12.38L0.0225002 5.3345C0.124737 4.41746 0.561486 3.57031 1.24919 2.95511C1.9369 2.33991 2.82728 1.99985 3.75 2H20.25Z" fill="#F0EEEE"></path></svg></a>
                 </div>
             </div>
@@ -120,7 +121,31 @@ require_once 'template/header.php';
             </div>
         </div>
     </div>
- 
+    <div id="contact">
+        <form action="/template/mail.php" method="post">
+            <div>
+                <label for="mail">E-Mail</label>
+                <input type="email" name="sender" id="mail" placeholder="nom@exemple.com">
+            </div>
+            <div>
+                <label for="type">Type de message</label>
+                <select name="type" id="type">
+                    <option value="professionnal" selected>Professionnel</option>
+                    <option value="bug">Rapport de Bug</option>
+                    <option value="other">Autre</option>
+                </select>
+            </div>
+            <div>
+                <label for="subject">Sujet</label>
+                <input type="text" name="subject" id="subject" placeholder="Titre court">
+            </div>
+            <div>
+                <label for="message">Message</label>
+                <textarea name="message" id="message" placeholder="Décrivez aussi précisément que possible"></textarea>
+            </div>
+            <input type="submit" name="toSend_email">
+        </form>
+    </div>
 </main>
 
 <?php
