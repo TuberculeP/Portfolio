@@ -19,7 +19,7 @@
 	<meta content="#FF90FB" data-react-helmet="true" name="theme-color">
 
     <!--Embed Twitter -->
-
+    
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="<?=$meta_url?>">
     <meta name="twitter:creator" content="@TuberculeP">
