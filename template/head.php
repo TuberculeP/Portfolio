@@ -5,10 +5,12 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
 	<meta name="description" content="<?=$meta_desc?>">
 	<meta name="keywords" content="portfolio code study student">
 	<link rel="canonical" href="<?=$meta_url?>">
 	<link rel="author" href="mailto:lavieville.felix@gmail.com">
+ 
 	<!--Embed -->
 	<meta content="<?=$meta_title?>" property="og:title">
 	<meta content="<?=$meta_desc?>" property="og:description">

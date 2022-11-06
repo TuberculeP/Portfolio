@@ -204,6 +204,7 @@ body.index.home main{
         }
       }
       &.competence{
+        margin: 0;
         height: auto;
         padding-bottom: 50px;
         div.skills{
@@ -214,6 +215,11 @@ body.index.home main{
             min-width: 350px;
           }
         }
+      }
+    }
+    #contact{
+      form{
+        padding: 20px;
       }
     }
   }
