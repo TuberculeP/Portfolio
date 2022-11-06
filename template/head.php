@@ -17,8 +17,16 @@
     <meta property="og:image:width" content="600">
     <meta property="og:image:height" content="600">
 	<meta content="#FF90FB" data-react-helmet="true" name="theme-color">
-	
-	<link rel="stylesheet" href="/style.css">
+
+    <!--Embed Twitter -->
+
+    <meta property="twitter:image" content="https://felix-lavieville.com/media/profile_square.webp">
+    <meta property="twitter:title" content="<?=$meta_title?>">
+    <meta property="twitter:description" content="<?=$meta_desc?>">
+    <meta property="twitter:image:alt" content="Félix Laviéville">
+    
+    
+    <link rel="stylesheet" href="/style.css">
 	<link rel="preload" href="/style.css" as="style">
 	<link rel="preload" href="/scripts/script_index.js" as="script">
 	<link rel="preload" href="/scripts/background_anim.js" as="script">
