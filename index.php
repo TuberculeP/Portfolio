@@ -126,8 +126,8 @@ require_once 'template/header.php';
             <h2>Contact</h2>
             <hr>
             <div class="input">
-                <label for="mail">E-Mail</label>
-                <input type="email" name="sender" id="mail" placeholder="nom@exemple.com">
+                <label for="email">E-Mail</label>
+                <input type="email" name="sender" id="email" placeholder="nom@exemple.com">
             </div>
             <div class="input">
                 <label for="type">Type de message</label>
