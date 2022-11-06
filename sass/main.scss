@@ -3,6 +3,8 @@
 @use "layout";
 @use "components";
 
+
+// quelques lignes utilisant les variables SCSS avant de me rendre compte que PHPStorm les sauvegardait pour moi
 *{
   color: abstracts.$text-color;
 }

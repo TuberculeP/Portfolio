@@ -3,6 +3,7 @@ main{
   min-height: calc(100vh - 100px);
 }
 
+//PAGE INDEX DU SITE
 body.index.home main{
   //profile & animations
   .imgprofile{
@@ -75,6 +76,7 @@ body.index.home main{
   }
 
   .index{
+    //section présentation
     &.presentation{
       height: calc(100vh - 200px);
       display: flex;
@@ -85,6 +87,7 @@ body.index.home main{
         margin: 30px 0;
       }
     }
+    //section compétence
     &.competence{
       border-radius: 50px;
       margin: 0 50px;
@@ -144,6 +147,7 @@ body.index.home main{
     }
   }
 
+  //formulaire de contact
   #contact{
     min-height: 100vh;
     display: flex;
@@ -186,6 +190,7 @@ body.index.home main{
     }
   }
 
+  //responsive mobile
   @media screen and (max-width: 800px) {
     .index{
       &.presentation{
@@ -226,6 +231,9 @@ body.index.home main{
   }
 }
 
+
+
+//PAGE INDEX DES PROJETS
 body.index.project{
   main{
     display: flex;
@@ -287,6 +295,7 @@ body.index.project{
         }
       }
     }
+    //responsive pour petit écran
     @media screen and (max-width: 1050px) {
       .grid{
         &-container{
@@ -301,6 +310,7 @@ body.index.project{
       }
     }
 
+    //responsive pour grand écran
     @media screen and (max-width: 800px) {
       display: block;
       padding-bottom: 50px;
