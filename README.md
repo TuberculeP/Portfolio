@@ -3,36 +3,33 @@
 
 Allow me to introduce my first try in a professional web portfolio.
 
-Languages : `HTML`, `SCSS`, `JS`
+Languages : `PHP`, `HTML`, `SCSS`, `JS`
 
 SCSS is configured to work as 7_1 architecture :
 ```
-├── _main.scss
+├── main.scss
 |
 ├── abstracts
-|   ├── _index.scss
-|   └── _variables.scss
+│   ├── _index.scss
+│   └── _variables.scss
 ├── base
-|   ├── _index.scss
-|   ├── _reset.scss
-|   └── _typography.scss
+│   ├── _index.scss
+│   ├── _reset.scss
+│   └── _typography.scss
 ├── components
-|   ├── _cta.scss
-|   └── _index.scss
+│   ├── _canvas.scss
+│   ├── _cta.scss
+│   ├── _h1.scss
+│   ├── _index.scss
+│   ├── _nav_a.scss
+│   └── _paragraph.scss
 └── layout
-    ├── _header.scss
-    ├── _index.scss
-    └── _main.scss
+    ├── _aside.scss
+    ├── _header.scss
+    ├── _index.scss
+    ├── _main-project.scss
+    └── _main.scss
 ```
-
-Apps used :
-- `ImgBot` (img size optimization)
-- `Mend Bolt` (code security & quality check)
-- `Vercel` (Front-End deployer)
-- `Zapier` (Service connector : GitHub-Discord for this project)
-
-This repository is linked to `Vercel` at the URL :<br> https://portfolio-tuberculep.vercel.app/
-
 
 Steps to use / edit :
 
@@ -63,4 +60,6 @@ sass --watch sass/main.scss:style.css
 ```
 ### Starting Website
 
-> As it remains a pure Front-End project, no framework or server is needed to navigate this website.
+You'll need PHP 8+ to start this project.
+
+Consider install `valet` or `MAMP/XAMP` to monitor and start website.
