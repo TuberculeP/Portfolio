@@ -17,11 +17,11 @@ if($_POST && isset($_POST['toSend_email'])){
 			'From: '.$_POST['sender']
 		);
 		if($isSent){
-			header('Location: /index.php?mail=success');
+			header('Location: /index.php?Success#contact');
 		}else{
-			header('Location: /index.php?mail=error');
+			header('Location: /index.php?Error#contact');
 		}
 	}else{
-		header('Location: /index.php?textError');
+		header('Location: /index.php?TextError#contact');
 	}
 }

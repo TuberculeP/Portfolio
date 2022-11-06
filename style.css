@@ -274,7 +274,7 @@ body.index.home main .index.competence div.languages div i {
   width: fit-content;
   transition: 0.2s;
 }
-body.index.home main .index.competence div.languages div h2 {
+body.index.home main .index.competence div.languages div h3 {
   text-align: center;
   color: #8dc8ff;
 }
@@ -300,6 +300,42 @@ body.index.home main .index.competence div.skills div ul li::before {
 }
 body.index.home main #contact {
   min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body.index.home main #contact form {
+  background-color: #0f0f11;
+  padding: 40px 60px;
+  border-radius: 25px;
+}
+body.index.home main #contact form i {
+  font-size: 12px;
+  text-align: center;
+}
+body.index.home main #contact form hr {
+  border: 1px solid #ff90fb;
+  margin-bottom: 20px;
+}
+body.index.home main #contact form div.input > * {
+  display: block;
+}
+body.index.home main #contact form div.input input, body.index.home main #contact form div.input select, body.index.home main #contact form div.input textarea {
+  padding: 10px;
+  background-color: #1d1d21;
+  color: #f0eeee;
+  border-width: 1px;
+  border-style: hidden hidden hidden solid;
+  border-color: #8dc8ff;
+  width: 300px;
+  resize: none;
+}
+body.index.home main #contact form div.input textarea {
+  min-height: 100px;
+}
+body.index.home main #contact form div.input label {
+  margin: 10px 0;
+  color: #8dc8ff;
 }
 @media screen and (max-width: 800px) {
   body.index.home main .index.presentation {
@@ -539,7 +575,7 @@ div.cta {
   box-sizing: border-box;
   margin: 20px auto;
 }
-div.cta button, div.cta a.button {
+div.cta button, div.cta a.button, div.cta input {
   transition: box-shadow 0.1s;
   text-decoration: none;
   background: none;
@@ -550,7 +586,7 @@ div.cta button, div.cta a.button {
   padding: 15px;
   box-shadow: 0 0 5px rgba(141, 200, 255, 0.6823529412);
 }
-div.cta button:hover, div.cta a.button:hover {
+div.cta button:hover, div.cta a.button:hover, div.cta input:hover {
   box-shadow: 0 0 10px rgb(141, 200, 255);
 }
 

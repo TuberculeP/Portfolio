@@ -115,7 +115,7 @@ body.index.home main{
             width: fit-content;
             transition: 0.2s;
           }
-          h2{
+          h3{
             text-align: center;
             color: #8dc8ff;
           }
@@ -146,6 +146,44 @@ body.index.home main{
 
   #contact{
     min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    form{
+      background-color: #0f0f11;
+      padding: 40px 60px;
+      border-radius: 25px;
+      i{
+        font-size: 12px;
+        text-align: center;
+      }
+      hr{
+        border: 1px solid #ff90fb;
+        margin-bottom: 20px;
+      }
+      div.input{
+        >*{
+          display: block;
+        }
+        input, select, textarea{
+          padding: 10px;
+          background-color: #1d1d21;
+          color: #f0eeee;
+          border-width: 1px;
+          border-style: hidden hidden hidden solid;
+          border-color: #8dc8ff;
+          width: 300px;
+          resize: none;
+        }
+        textarea{
+          min-height: 100px;
+        }
+        label{
+          margin: 10px 0;
+          color: #8dc8ff;
+        }
+      }
+    }
   }
 
   @media screen and (max-width: 800px) {

@@ -67,35 +67,35 @@ require_once 'template/header.php';
             <div class="languages">
                 <div>
                     <i class="devicon-html5-plain"></i>
-                    <h2>HTML</h2>
+                    <h3>HTML</h3>
                 </div>
                 <div>
                     <i class="devicon-css3-plain"></i>
-                    <h2>CSS</h2>
+                    <h3>CSS</h3>
                 </div>
                 <div>
                     <i class="devicon-javascript-plain"></i>
-                    <h2>JavaScript</h2>
+                    <h3>JavaScript</h3>
                 </div>
                 <div>
                     <i class="devicon-discordjs-plain"></i>
-                    <h2>Discord.js</h2>
+                    <h3>Discord.js</h3>
                 </div>
                 <div>
                     <i class="devicon-python-plain"></i>
-                    <h2>Python</h2>
+                    <h3>Python</h3>
                 </div>
                 <div>
                     <i class="devicon-mysql-plain"></i>
-                    <h2>MySQL</h2>
+                    <h3>MySQL</h3>
                 </div>
                 <div>
                     <i class="devicon-php-plain"></i>
-                    <h2>PHP</h2>
+                    <h3>PHP</h3>
                 </div>
                 <div>
                     <i class="devicon-wordpress-plain"></i>
-                    <h2>WordPress</h2>
+                    <h3>WordPress</h3>
                 </div>
 
             </div>
@@ -123,11 +123,13 @@ require_once 'template/header.php';
     </div>
     <div id="contact">
         <form action="/template/mail.php" method="post">
-            <div>
+            <h2>Contact</h2>
+            <hr>
+            <div class="input">
                 <label for="mail">E-Mail</label>
                 <input type="email" name="sender" id="mail" placeholder="nom@exemple.com">
             </div>
-            <div>
+            <div class="input">
                 <label for="type">Type de message</label>
                 <select name="type" id="type">
                     <option value="professionnal" selected>Professionnel</option>
@@ -135,16 +137,25 @@ require_once 'template/header.php';
                     <option value="other">Autre</option>
                 </select>
             </div>
-            <div>
+            <div class="input">
                 <label for="subject">Sujet</label>
                 <input type="text" name="subject" id="subject" placeholder="Titre court">
             </div>
-            <div>
+            <div class="input">
                 <label for="message">Message</label>
                 <textarea name="message" id="message" placeholder="Décrivez aussi précisément que possible"></textarea>
             </div>
-            <input type="submit" name="toSend_email">
-        </form>
+            <div class="cta">
+                <input type="submit" name="toSend_email">
+            </div>
+            <?php if($_GET && isset($_GET['TextError'])):?>
+                <i>Erreur lors du remplissage du formulaire</i>
+	        <?php elseif($_GET && isset($_GET['Error'])):?>
+                <i>Erreur lors de l'envoi du formulaire</i>
+			<?php elseif($_GET && isset($_GET['Success'])):?>
+                <i>Le formulaire a été envoyé avec succès !</i>
+			<?php endif;?>
+    </form>
     </div>
 </main>
 
