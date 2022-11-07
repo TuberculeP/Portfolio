@@ -30,7 +30,7 @@ $meta_img = "https://felix-lavieville.com".$meta_img;
     <meta name="twitter:creator" content="@TuberculeP">
     <meta name="twitter:title" content="<?=$meta_title?>">
     <meta name="twitter:description" content="<?=$meta_desc?>">
-    <meta name="twitter:image" content="https://felix-lavieville.com/media/profile_square.webp">
+    <meta name="twitter:image" content="<?=$meta_img?>">
     
     
     <link rel="stylesheet" href="/style.css">
