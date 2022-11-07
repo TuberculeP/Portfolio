@@ -3,8 +3,8 @@ $title = "Le Magic Knob - Félix Laviéville";
 $meta_title = "Le Magic Knob - Félix Laviéville";
 $meta_desc = "Découverte de l'électronique et de l'IOT ! Le Magic Knob vous permet de contrôler vos instruments de musique et plugins avec votre main.";
 $meta_url = "https://felix-lavieville.com/projets/magic-knob.php";
-require_once '../template/head.php';
 $meta_img = "/media/magic-knob-connected.webp";
+require_once '../template/head.php';
 ?>
 <body>
 <?php
