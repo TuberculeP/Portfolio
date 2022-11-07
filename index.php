@@ -3,6 +3,8 @@ $title = "Mon Portfolio - Félix Laviéville";
 $meta_title = "Mon Portfolio - Félix Laviéville";
 $meta_desc = "Bienvenue sur mon portfolio ! Je suis étudiant en 2e année à l'IIM en Coding & Digital Innovation et je vous présente ici quelques projets !";
 $meta_url = "https://felix-lavieville.com/";
+$meta_img = "/media/profile_square.webp";
+$meta_img .= "https://felix-lavieville.com";
 require_once 'template/head.php';
 ?>
 

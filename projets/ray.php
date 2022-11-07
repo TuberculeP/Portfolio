@@ -3,6 +3,8 @@ $title = "Ray Tracing PY - Félix Laviéville";
 $meta_title = "Ray Tracing PY - Félix Laviéville";
 $meta_desc = "Projet de mise en application directe des formules physiques de réflexion et réfraction de la lumière via un script Python3.";
 $meta_url = "https://felix-lavieville.com/projets/ray.php";
+$meta_img = "/media/ray1.webp";
+$meta_img .= "https://felix-lavieville.com";
 require_once '../template/head.php';
 ?>
 <body>
