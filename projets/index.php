@@ -5,7 +5,6 @@ $meta_desc =
     "Sur cette page, retrouvez plusieurs projets que j'ai pu réaliser à l'école ou au lycée, en TD comme en autonomie !";
 $meta_url = "https://felix-lavieville.com/projets/";
 $meta_img = "/media/profile_square.webp";
-$meta_img .= "https://felix-lavieville.com";
 require_once '../template/head.php';
 ?>
 	

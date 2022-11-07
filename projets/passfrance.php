@@ -5,7 +5,6 @@ $meta_desc =
 	"PassFrance est un site de présentation d'un service mobilité fictif : 1 Pass unique donnant l'accès à toute la France.";
 $meta_url = "https://felix-lavieville.com/projets/passfrance.php";
 $meta_img = "/media/passfrance_main.webp";
-$meta_img .= "https://felix-lavieville.com";
 require_once '../template/head.php';
 ?>
 	

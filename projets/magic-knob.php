@@ -5,7 +5,6 @@ $meta_desc = "Découverte de l'électronique et de l'IOT ! Le Magic Knob vous pe
 $meta_url = "https://felix-lavieville.com/projets/magic-knob.php";
 require_once '../template/head.php';
 $meta_img = "/media/magic-knob-connected.webp";
-$meta_img .= "https://felix-lavieville.com";
 ?>
 <body>
 <?php

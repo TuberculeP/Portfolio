@@ -1,3 +1,7 @@
+<?php
+$meta_img = "https://felix-lavieville.com".$meta_img;
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
