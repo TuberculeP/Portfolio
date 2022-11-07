@@ -4,7 +4,7 @@ $meta_title = "Les Triminos - Félix Laviéville";
 $meta_desc = "Prenons un grand cadrillage et retirons lui une case au hasard. Est-ce possible de remplir le reste du cadrillage avec des pièces identiques ?";
 $meta_url = "https://felix-lavieville.com/projets/triminos.php";
 $meta_img = "/media/trimi_5.webp";
-$meta_img .= "https://felix-lavieville.com";
+$meta_img = "https://felix-lavieville.com".$meta_img;
 require_once '../template/head.php';
 ?>
 	

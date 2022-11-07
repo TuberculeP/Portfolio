@@ -6,6 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="eb630c41-40c9-417b-b728-070c52f2ab9f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projets/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/projets/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projets/magic-knob.php" beforeDir="false" afterPath="$PROJECT_DIR$/projets/magic-knob.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projets/passfrance.php" beforeDir="false" afterPath="$PROJECT_DIR$/projets/passfrance.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projets/ray.php" beforeDir="false" afterPath="$PROJECT_DIR$/projets/ray.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projets/triminos.php" beforeDir="false" afterPath="$PROJECT_DIR$/projets/triminos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/template/head.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,6 +110,7 @@
       <workItem from="1667735208625" duration="12078000" />
       <workItem from="1667749657145" duration="1860000" />
       <workItem from="1667752708357" duration="978000" />
+      <workItem from="1667817206481" duration="372000" />
     </task>
     <servers />
   </component>
