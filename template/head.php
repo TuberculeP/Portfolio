@@ -20,7 +20,6 @@ $meta_img = "https://felix-lavieville.com".$meta_img;
 	<meta content="<?=$meta_desc?>" property="og:description">
 	<meta content="<?=$meta_url?>"  property="og:url">
 	<meta content="<?=$meta_img?>" property="og:image">
-    <meta property="og:image:width" content="600">
     <meta property="og:image:height" content="600">
 	<meta content="#FF90FB" data-react-helmet="true" name="theme-color">
 
