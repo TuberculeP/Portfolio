@@ -65,38 +65,16 @@ require_once 'template/header.php';
         <h1>Compétences</h1>
         <div>
             <div class="languages">
-                <div>
-                    <i class="devicon-html5-plain"></i>
-                    <h3>HTML</h3>
-                </div>
-                <div>
-                    <i class="devicon-css3-plain"></i>
-                    <h3>CSS</h3>
-                </div>
-                <div>
-                    <i class="devicon-javascript-plain"></i>
-                    <h3>JavaScript</h3>
-                </div>
-                <div>
-                    <i class="devicon-discordjs-plain"></i>
-                    <h3>Discord.js</h3>
-                </div>
-                <div>
-                    <i class="devicon-python-plain"></i>
-                    <h3>Python</h3>
-                </div>
-                <div>
-                    <i class="devicon-mysql-plain"></i>
-                    <h3>MySQL</h3>
-                </div>
-                <div>
-                    <i class="devicon-php-plain"></i>
-                    <h3>PHP</h3>
-                </div>
-                <div>
-                    <i class="devicon-wordpress-plain"></i>
-                    <h3>WordPress</h3>
-                </div>
+                <div><i class="devicon-html5-plain"></i><h3>HTML</h3></div>
+                <div><i class="devicon-php-plain"></i><h3>PHP</h3></div>
+                <div><i class="devicon-mysql-plain"></i><h3>MySQL</h3></div>
+                <div><i class="devicon-sass-plain"></i><h3>SCSS</h3></div>
+                <div><i class="devicon-tailwindcss-plain"></i><h3>Tailwind</h3></div>
+                <div><i class="devicon-javascript-plain"></i><h3>JavaScript</h3></div>
+                <div><i class="devicon-nodejs-plain"></i><h3>Node.js</h3></div>
+                <div><i class="devicon-vuejs-plain"></i><h3>Vue.js</h3></div>
+                <div><i class="devicon-discordjs-plain"></i><h3>Discord.js</h3></div>
+                <div><i class="devicon-python-plain"></i><h3>Python</h3></div>
 
             </div>
             <div class="skills">
