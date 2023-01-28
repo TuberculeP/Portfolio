@@ -23,12 +23,21 @@ SCSS is configured to work as 7_1 architecture :
 │   ├── _index.scss
 │   ├── _nav_a.scss
 │   └── _paragraph.scss
-└── layout
-    ├── _aside.scss
-    ├── _header.scss
-    ├── _index.scss
-    ├── _main-project.scss
-    └── _main.scss
+├── layout
+│   ├── _aside.scss
+│   ├── _header.scss
+│   ├── _index.scss
+│   ├── _main-project.scss
+│   └── _main.scss
+└── main.scss
+```
+
+Apps used :
+- `ImgBot` (img size optimization)
+- `Mend Bolt` (code security & quality check)
+- `Zapier` (Service connector : GitHub-Discord for this project)
+
+This repository is linked to `Vercel` at the URL :<br> https://portfolio-tuberculep.vercel.app/
 ```
 
 Steps to use / edit :

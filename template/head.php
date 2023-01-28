@@ -1,3 +1,7 @@
+<?php
+$meta_img = "https://felix-lavieville.com".$meta_img;
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -15,8 +19,7 @@
 	<meta content="<?=$meta_title?>" property="og:title">
 	<meta content="<?=$meta_desc?>" property="og:description">
 	<meta content="<?=$meta_url?>"  property="og:url">
-	<meta content="https://felix-lavieville.com/media/profile_square.webp" property="og:image">
-    <meta property="og:image:width" content="600">
+	<meta content="<?=$meta_img?>" property="og:image">
     <meta property="og:image:height" content="600">
 	<meta content="#FF90FB" data-react-helmet="true" name="theme-color">
 
@@ -27,7 +30,7 @@
     <meta name="twitter:creator" content="@TuberculeP">
     <meta name="twitter:title" content="<?=$meta_title?>">
     <meta name="twitter:description" content="<?=$meta_desc?>">
-    <meta name="twitter:image" content="https://felix-lavieville.com/media/profile_square.webp">
+    <meta name="twitter:image" content="<?=$meta_img?>">
     
     
     <link rel="stylesheet" href="/style.css">

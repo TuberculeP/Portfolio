@@ -3,7 +3,11 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
+
 
 body{
   margin: 0;

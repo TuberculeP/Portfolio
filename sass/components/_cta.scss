@@ -15,6 +15,7 @@ div.cta {
     box-shadow: 0 0 5px rgba(141, 200, 255, 0.6823529412);
     &:hover{
       box-shadow: 0 0 10px rgb(141, 200, 255);
+      cursor: pointer;
     }
   }
 }

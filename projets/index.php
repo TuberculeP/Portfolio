@@ -4,6 +4,7 @@ $meta_title = "Mes Projets - Félix Laviéville";
 $meta_desc =
     "Sur cette page, retrouvez plusieurs projets que j'ai pu réaliser à l'école ou au lycée, en TD comme en autonomie !";
 $meta_url = "https://felix-lavieville.com/projets/";
+$meta_img = "/media/profile_square.webp";
 require_once '../template/head.php';
 ?>
 	
@@ -11,6 +12,34 @@ require_once '../template/head.php';
 
 <?php
 require_once '../template/header.php';
+
+//se connecter à GitHub et récuperer tous les repo
+$repos = [];
+$curl = curl_init();
+curl_setopt_array($curl, [
+    CURLOPT_URL => "https://api.github.com/users/TuberculeP/repos",
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_FOLLOWLOCATION => true,
+    CURLOPT_ENCODING => "",
+    CURLOPT_MAXREDIRS => 10,
+    CURLOPT_TIMEOUT => 30,
+    CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+    CURLOPT_CUSTOMREQUEST => "GET",
+    CURLOPT_HTTPHEADER => [
+        "cache-control: no-cache",
+        "user-agent: TuberculeP",
+        "Authorization: Bearer TOKENICI"
+    ],
+]);
+$response = curl_exec($curl);
+$err = curl_error($curl);
+curl_close($curl);
+if ($err) {
+    echo "cURL Error #:" . $err;
+} else {
+    $repos = json_decode($response);
+}
+
 ?>
 	
 	<main>
@@ -24,24 +53,22 @@ require_once '../template/header.php';
                 <button>Indécis ?</button>
             </div>
         </div>
-        
-        <div class="grid-container">
-            <a href="passfrance.php" class="grid-main">
-                <h3>PassFrance</h3>
-                <img src="/media/passfrance_main.webp" alt="passfrance">
-            </a>
-            <a href="magic-knob.php" class="grid-sec">
-                <h3>Magic Knob</h3>
-                <img src="/media/magic-knob-schema-montage.webp" alt="magic knob">
-            </a>
-            <a href="ray.php" class="grid-sec">
-                <h3>Ray Tracing</h3>
-                <img src="/media/ray1.webp" alt="Ray Tracing">
-            </a>
-            <a href="triminos.php" class="grid-sec">
-                <h3>Triminos</h3>
-                <img src="/media/trimi_5.webp" alt="triminos">
-            </a>
+        <div class="list">
+			<?php
+			//afficher tous les repos avec Titre, Description, Dernière mise à jour, Langages utilisés
+			foreach ($repos as $repo) {
+				
+				?>
+                    <div class="project-listed">
+                        <a href="<?=$repo->html_url?>">
+                            <h2><?= $repo->name ?></h2>
+                            <div>Dernière mise à jour : <?= date('d/m/Y', strtotime($repo->updated_at)) ?></div>
+                            <p><i><?= $repo->description ?></i></p>
+                        </a>
+                    </div>
+				<?php
+			}
+			?>
         </div>
 	</main>
 
