@@ -1,6 +1,4 @@
-.env
-.idea
-.DS_Store
+
 
 # Local development
 .env.local
@@ -20,3 +18,5 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+*.css.map

@@ -575,6 +575,12 @@ aside nav {
   transform: scale(1.4);
 }
 
+<<<<<<< HEAD
+=======
+/*
+Ces pages serviront au rendu global du site
+ */
+>>>>>>> main
 div.cta {
   width: fit-content;
   box-sizing: border-box;
