@@ -102,7 +102,7 @@ if(document.body.classList.contains("project")){
 	document.querySelector('#navProjet').classList.add("active");
 
 	let randomDuPif = document.querySelector("button");
-	let listeProjets = document.querySelectorAll(".grid-container a");
+	let listeProjets = document.querySelectorAll(".list a");
 	randomDuPif.addEventListener('click', ()=>{
 		window.location.href = listeProjets[Math.floor(Math.random() * listeProjets.length)].href;
 	})

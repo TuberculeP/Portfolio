@@ -228,63 +228,45 @@ body.index.home main{
 
 body.index.project{
   main{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+    .list{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      .project-listed{
+        a{
+            text-decoration: none;
+        }
+        margin: 25px;
+        &:hover{
+          transform: scale(1.05);
+          cursor: pointer;
+        }
+        h2{
+          color: #8dc8ff;
+          &::after{
+            content: "";
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: #8dc8ff;
+          }
+        }
+        p {
+          border: none;
+        }
+      }
+    }
     p{
       margin: 30px auto;
     }
     div.text{
       width: 40%;
+      margin: 0 auto;
     }
-    .grid {
-      &-container {
-        width: 60%;
-        margin-right: 50px;
-        height: 500px;
-        display: grid;
-        gap: 30px;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 3fr 1fr;
-      }
-
-      &-main {
-        grid-row: 1/4;
-        background-color: #8dc8ff;
-        width: 100%;
-        height: 100%;
-      }
-
-      &-sec {
-        background-color: black ;
-        width: 100%;
-        height: 100%;
-      }
-      &-main, &-sec{
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        position: relative;
-        img{
-          height: 100%;
-          transition: 0.3s;
-        }
-        h3{
-          position: absolute;
-          z-index: 10;
-          top: 0;
-          left: 0;
-          padding: 20px;
-          background-color: #261726;
-          border-radius: 0 0 25px 0;
-          box-shadow: 0 0 5px rgba(0, 0, 0, 0.53);
-        }
-        &:hover{
-          img{
-            transform: scale(1.1);
-          }
-        }
+    .project{
+      p{
+        text-align: left;
+        margin: 30px;
       }
     }
     @media screen and (max-width: 1050px) {
